@@ -1,0 +1,5 @@
+Size = New Size(comprimento, altura) 'Define o tamanho da janela
+        Me.MaximizedBounds = Screen.PrimaryScreen.WorkingArea 'Define estado para tela-cheia
+        Me.WindowState = FormWindowState.Maximized 'Inicia janela maximizada
+        
+        
