@@ -3,3 +3,5 @@ Size = New Size(comprimento, altura) 'Define o tamanho da janela
         Me.WindowState = FormWindowState.Maximized 'Inicia janela maximizada
         
         
+Me.BackColor = Color.FromArgb(50, 255, 87) 'Define cor do fundo da janela em RGB
+Me.BackColor = Color.Red 'Podem ser diversas cores predefinidas, Black, White, Purple
