@@ -1,0 +1,2 @@
+'pausa até a próxima linha, em milésimos
+System.Threading.Thread.Sleep(100)
