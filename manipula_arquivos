@@ -1,0 +1,2 @@
+'Lê 6ª linha do arquivo e armazena na variavel arquivo
+Dim arquivo As String = System.IO.File.ReadAllLines("C:\Foo\bar.txt")(5)
