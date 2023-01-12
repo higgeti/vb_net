@@ -1,0 +1,4 @@
+'caminho_do_arquivo é a string com o caminho do arquivo, exemplo C:\foo\bar.txt
+If Not System.IO.File.Exists(caminho_do_arquivo) Then
+   System.IO.File.Create(caminho_do_arquivo).Dispose()
+End If
