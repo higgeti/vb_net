@@ -1,4 +1,5 @@
  PictureBox1.Load(caminho_da_imagem) 'carrega imagem no picturebox
+ PictureBox1.ImageLocation = "caminho_da_imagem.jpg" 'Altera imagem do picturebox
    PictureBox1.Location = New Point(x_pos, y_pos) 'Define localização da picturebox em relação ao canto superior esquerdo
         PictureBox1.Size = New Size(comprimento, largura) 'Define o tamanho do picturebox
         PictureBox1.Show() 'Exibe Picturebox
