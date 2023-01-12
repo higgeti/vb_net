@@ -1,0 +1,4 @@
+'caminho_da_pasta é o caminho da pasta a ser criada, exemplo: C:\Foo
+ If Not System.IO.Directory.Exists(caminho_da_pasta) Then
+         System.IO.Directory.CreateDirectory(caminho_da_pasta)
+ End If
