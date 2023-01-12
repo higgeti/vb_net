@@ -1,0 +1,7 @@
+System.DateTime.Now.ToString("dd") 'retorna dia do mês
+System.DateTime.Now.ToString("MM") 'retorna mês do ano
+System.DateTime.Now.ToString("yyyy") 'retorna ano com 4 digitos
+System.DateTime.Now.ToString("yy") 'retorna ano com 2 digitos
+DateTime.Now.ToString("HH:mm") 'Retorna horas de 0 a 23 e minutos
+DateTime.Now.ToString("hh:mm") 'Retorna horas de 0 a 12 e minutos
+DateTime.Now.ToString("HH:mm:ss") 'Retorna horas de 0 a 23, minutos e segundos
