@@ -1,0 +1,4 @@
+Dim arquivo As System.IO.StreamWriter
+ arquivo = My.Computer.FileSystem.OpenTextFileWriter("camiho_do_arquivo", True) 'True = adiciona novas linhas. False = sobrescreve todo o conteúdo
+ arquivo.WriteLine("Foo" & bar)
+ arquivo.Close()
