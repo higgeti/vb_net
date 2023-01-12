@@ -1,0 +1,2 @@
+My.Computer.Audio.Stop() 'Interrompe o que está sendo tocado
+My.Computer.Audio.Play("caminho_do_wave") 'Reproduz áudio do caminho especificado
