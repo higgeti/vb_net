@@ -2,3 +2,21 @@ Dim arquivo As System.IO.StreamWriter
  arquivo = My.Computer.FileSystem.OpenTextFileWriter("camiho_do_arquivo", True) 'True = adiciona novas linhas. False = sobrescreve todo o conteúdo
  arquivo.WriteLine("Foo" & bar)
  arquivo.Close()
+
+
+
+
+
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+'Para salvar diversas linhas à serem salvas de uma vez
+'Criar uma variavel do tipo System.Text.StringBuilder()
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+   Dim doc_Texto As New System.Text.StringBuilder()
+   
+   'Para armazenar as linhas na memória, utilizar:
+   doc_Texto.AppendLine("Foo" & bar)
+   
+   
+'Para salvar todas as linhas, ao fechar o arquivo utilizar:
+arquivo.WriteLine(doc_Texto.AppendLine)
