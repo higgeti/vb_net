@@ -1,2 +1,11 @@
 'Lê 6ª linha do arquivo e armazena na variavel arquivo
 Dim arquivo As String = System.IO.File.ReadAllLines("C:\Foo\bar.txt")(5)
+
+'Verifica quantidade de linhas em um arquivo de texto
+Dim quantidade_linhas = arquivo.Length
+
+
+'Divide CSV em colunas
+ Dim linha = "" 'System.IO.File.ReadAllLines(arquivo)(5) 'sendo 5 o número da linha desejada
+            coluna = linha.Split(New String() {";"}, StringSplitOptions.None)  'para usar o valor dessa etapa em um ítem, usar "coluna(x") sendo x o número da coluna desejada         
+            
