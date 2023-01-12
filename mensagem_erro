@@ -1,0 +1,14 @@
+'Cria uma janela com uma mensagem de um botão OK
+MsgBox("Mensagem à aparecer no pop-up", "Nome da Janela")
+
+'Pode-se usar com alguns ícones de exclamação, X colocando alguns parâmetros:
+MsgBox("Mensagem à aparecer no pop-up", vbCritical, "Nome da Janela") 'X vermelho
+MsgBox("Mensagem à aparecer no pop-up", vbExclamation, "Nome da Janela") 'Exclamação amarelo
+
+
+'Pode ser uma janela com resposta "sim" e "não
+Dim resposta As Integer
+resposta = MsgBox("Deseja realmente sair", vbYesNo + vbQuestion, "Sair")
+If resposta = vbYes Then
+    ' Se a resposta for Sim, código segue por aqui
+End If 
