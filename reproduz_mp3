@@ -1,0 +1,20 @@
+'Utilizar esta biblioteca
+Imports System.Windows.Media
+
+Public Class Form1
+    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        ' Caminho do arquivo
+        Dim mp3FilePath As String = "C:\example\example.mp3"
+
+        ' Cria um objeto de MediaPLayer
+        Dim player As New MediaPlayer()
+
+        ' Abre o player com o arquivo estipulado
+        player.Open(New Uri(mp3FilePath))
+
+        'Reproduz o arquivo
+        player.Play()
+        'Para reprodução
+        player.Stop()
+    End Sub
+End Class
