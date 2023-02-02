@@ -1,4 +1,5 @@
-    Private Sub main_KeyDown(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles MyBase.KeyDown
+'KeyPreview deve estar como True nas configurações do Form
+Private Sub main_KeyDown(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles MyBase.KeyDown
         If e.Control = True And e.KeyCode = Keys.B Then 'Verifica se Ctrl e B foram pressionados simulaneamente
             MsgBox("CTRL + B Pressionados")
         End If
