@@ -1,0 +1,1 @@
+linha = System.IO.File.ReadAllLines("C:\caminho_do_arquivo.txt")(10) 'aquivo pode ser txt ou outros formatos de texto simples. Após, número da linha, começando em 0
