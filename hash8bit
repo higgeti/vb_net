@@ -1,0 +1,14 @@
+Public Class Form1
+    Public str As Char
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Label1.Text = hash(TextBox1.Text) 'Criar um Label e um TextBox
+    End Sub
+
+    Function Hash(str As String) As Byte
+        Dim result As Byte = 0
+        For i As Integer = 0 To str.Length - 1
+            result = result Xor Convert.ToByte(str(i))
+        Next
+        Return result
+    End Function
+    End Class
