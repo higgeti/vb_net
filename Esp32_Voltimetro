@@ -1,0 +1,17 @@
+#define ANALOG_PIN 34  // A0
+#define VCC 3.3       // 
+
+void setup() {
+  Serial.begin(115200);  // 
+}
+
+void loop() {
+  int sensorValue = analogRead(ANALOG_PIN);  // 
+  float voltage = (sensorValue / 4095.0) * VCC;  // 
+
+  Serial.println(voltage, 5);  // 
+  //delay(1000);  //
+}
+
+
+//http://arduino.esp8266.com/stable/package_esp8266com_index.json
