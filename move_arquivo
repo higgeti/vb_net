@@ -1,0 +1,12 @@
+Dim arquivo_para_mover As String
+Dim pasta_de_destino As String
+
+arquivo_para_mover = "C:\Users\foo.txt"
+pasta_de_destino = "C:\Users\nova_pasta\foo.txt"
+
+If System.IO.File.Exists( arquivo_para_mover ) = True Then
+
+System.IO.File.Move( arquivo_para_mover, pasta_de_destino )
+MessageBox.Show("Arquivo movido")
+
+End If
