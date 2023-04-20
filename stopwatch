@@ -1,0 +1,29 @@
+Public Class Form1
+
+    Private WithEvents Timer1 As New Timer
+    Private StartTime As DateTime
+
+    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Timer1.Interval = 10 ' 10 milliseconds
+        Button1.Text = "Start"
+        Label1.Text = "00:00:00.000"
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        If Button1.Text = "Start" Then
+            Button1.Text = "Stop"
+            StartTime = DateTime.Now
+            Timer1.Start()
+        Else
+            Button1.Text = "Start"
+            Timer1.Stop()
+        End If
+    End Sub
+
+    Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
+        Dim Elapsed As TimeSpan = DateTime.Now - StartTime
+        Label1.Text = String.Format("{0:00}:{1:00}:{2:00}.{3:000}", _
+            Elapsed.Hours, Elapsed.Minutes, Elapsed.Seconds, Elapsed.Milliseconds)
+    End Sub
+
+End Class
